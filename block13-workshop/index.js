@@ -35,8 +35,6 @@ function convertToCelsius(f) {
       return 'hot';
     } else if (f>=100){
       return 'very hot';
-    } else {
-      return 'Please try to enter a number!';
     }
   }
   
