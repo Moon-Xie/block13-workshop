@@ -7,7 +7,7 @@
  */
 function convertToCelsius(f) {
     // TODO
-    return (f - 32)*(5/9);
+    return Math.round((f - 32)*(5/9));
   }
   
   /**
@@ -35,8 +35,6 @@ function convertToCelsius(f) {
       return 'hot';
     } else if (f>=100){
       return 'very hot';
-    } else {
-      return 'Please try to enter a number!';
     }
   }
   
@@ -46,7 +44,7 @@ function convertToCelsius(f) {
    */
   function getRandomInt(limit) {
     // TODO
-    let numOfLimit = Math.floor(Math.random() * limit);
+    let numOfLimit = Math.round(Math.random() * limit);
     return numOfLimit;
   }
   
